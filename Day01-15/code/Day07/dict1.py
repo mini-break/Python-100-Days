@@ -23,7 +23,9 @@ def main():
     print(scores.get('武则天', 60))
     print(scores.popitem())
     print(scores.popitem())
+    # pop(key[,default])  key:要删除的键  default:当键 key 不存在时返回的值
     print(scores.pop('骆昊', 100))
+    print(scores)
     scores.clear()
     print(scores)
 

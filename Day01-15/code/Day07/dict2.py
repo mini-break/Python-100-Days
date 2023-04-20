@@ -10,6 +10,7 @@ Date: 2018-03-06
 def main():
     stu = {'name': '骆昊', 'age': 38, 'gender': True}
     print(stu)
+    print(type(stu.keys()))
     print(stu.keys())
     print(stu.values())
     print(stu.items())
@@ -21,7 +22,8 @@ def main():
     print(stu)
     stu.setdefault('score', 60)
     print(stu)
-    stu.setdefault('score', 100)
+    b = stu.setdefault('score', 100)
+    print("b = %s" % b)
     print(stu)
     stu['score'] = 100
     print(stu)

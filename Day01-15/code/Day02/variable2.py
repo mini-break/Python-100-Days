@@ -12,6 +12,9 @@ print(a + b)
 print(a - b)
 print(a * b)
 print(a / b)
+# 整除
 print(a // b)
+# 取模
 print(a % b)
+# 指数
 print(a ** b)
