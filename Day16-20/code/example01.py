@@ -21,6 +21,8 @@ from matplotlib import pyplot
 import numpy
 
 
+# 这里参数后面的冒号是参数类型建议符，用来提供给程序员建议传入的实参类型，即使去掉也不会有任何影响
+# 结尾的箭头->代表着函数返回值建议符，用来提供函数返回值的数据类型
 def seq_search(items: list, elem) -> int:
     """顺序查找"""
     for index, item in enumerate(items):
@@ -33,6 +35,7 @@ def bin_search(items, elem):
     """二分查找"""
     start, end = 0, len(items) - 1
     while start <= end:
+        # 整数除法，向下取整
         mid = (start + end) // 2
         if elem > items[mid]:
             start = mid + 1
