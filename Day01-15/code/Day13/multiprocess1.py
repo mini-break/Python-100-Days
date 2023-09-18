@@ -8,8 +8,7 @@ Date: 2018-03-20
 
 # 通过下面程序的执行结果可以证实 父进程在创建子进程时复制了进程及其数据结构
 # 每个进程都有自己独立的内存空间 所以进程之间共享数据只能通过IPC的方式
-
-
+import random
 from multiprocessing import Process, Queue, current_process
 from time import sleep
 
